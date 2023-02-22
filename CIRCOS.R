@@ -16,7 +16,7 @@ bed_list<- list(circo_initial,circo_final)
 pal <- choose_palette()
 mypal<- c(pal(2)) #en caso de tener mas archivos ajustar el numero a la cantidad que tengas.
 write.table(mypal, file = "Hexcodes_circo.txt", sep = "\t",
-            row.names = TRUE, col.names = NA)
+            row.names = TRUE, col.names = "Códigos Hexadecimal")
 
 #Creación del circosplot. Se pueden ajustar los parámetros dependiendo de los cromosomas, visualización,etc. Si se añaden más funciones, solo asegurarse de limpiar el circos (circos.clear()) y manter dev.off al último.
 circos.clear()
